@@ -1,0 +1,90 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+BODY{
+    background: #000;
+}
+
+#Main{
+    margin:auto;
+    width: 3720px;
+    height: 5195px;
+    background-image: url(Background.jpg);
+    border:200px solid white;
+    box-sizing: border-box;
+
+}
+
+#Demo{
+    margin:120px auto;
+    width: 744px;
+    height: 1039px;
+    background: #66ccff;
+    border:40px solid white;
+    box-sizing: border-box;
+    border-radius:10px;
+
+}
+
+#blank{
+    width: 11%;
+    height: 6%;
+}
+
+#Mainarea{
+    background-image: url("border.png");
+    background-repeat: no-repeat;
+    margin:auto;
+    width: 80%;
+    height: 90%;
+}
+
+#title{
+    font:100px 阿里巴巴普惠体;
+    transform:translate(80px,50px);
+    color: white;
+}
+
+#UL1{
+    font:bold 535px 思源宋体 CN;
+    transform:translate(-470px,-750px);
+    color: #f9ad22;
+}
+
+#UL2{
+    font:bold 530px 思源宋体 CN;
+    transform:translate(-455px,-1500px);
+    color:white;
+}
+
+#DR1{
+    font:bold 530px 思源宋体 CN;
+    transform:translate(470px,2400px) rotate(180deg);;
+    color: #f9ad22;
+}
+
+#DR2{
+    font:bold 530px 思源宋体 CN;
+    transform:translate(450px,1630px) rotate(180deg);
+    color:white;
+}
+
+#locm{
+    position:relative;
+    margin: auto;
+    width: 2250px;
+    height: auto;
+    transform:translate(200px,-3400px);
+    z-index:2;
+}
+
+#locs{
+    position:relative;
+    margin: auto;
+    width: 2250px;
+    height: auto;
+    transform:translate(400px,-4600px);
+    z-index:1;
+}
