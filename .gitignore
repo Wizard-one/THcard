@@ -1,2 +1,4 @@
 img/
 .vscode/
+geckodriver*
+__pycache__
