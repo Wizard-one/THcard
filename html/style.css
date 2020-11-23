@@ -9,10 +9,10 @@ BODY{
 
 #Main{
     margin:auto;
-    width: 3720px;
-    height: 5195px;
+    width: 3545px;
+    height: 5905px;
     background-image: url(Background.jpg);
-    border:200px solid white;
+    border:220px solid white;
     box-sizing: border-box;
 
 }
@@ -28,63 +28,73 @@ BODY{
 
 }
 
-#blank{
-    width: 11%;
-    height: 6%;
-}
 
 #Mainarea{
     background-image: url("border.png");
     background-repeat: no-repeat;
-    margin:auto;
-    width: 80%;
-    height: 90%;
+    margin:0 auto;
+    width: 72%;
+    height: 100%;
+    transform:translate(0px,430px);
 }
 
 #title{
-    font:100px 阿里巴巴普惠体;
+    font:80px 阿里巴巴普惠体 Light;
+    transform:translate(80px,50px);
+    color: white;
+}
+
+#name{
+    font:80px 阿里巴巴普惠体 Light;
     transform:translate(80px,50px);
     color: white;
 }
 
 #UL1{
-    font:bold 535px 思源宋体 CN;
-    transform:translate(-470px,-750px);
-    color: #f9ad22;
+    font:bolder 450px 思源宋体 CN;
+    white-space:nowrap;
+    transform:translate(-390px,-760px);
+    color: #5461B0;
+    z-index:1;
 }
 
 #UL2{
-    font:bold 530px 思源宋体 CN;
-    transform:translate(-455px,-1500px);
-    color:white;
+    font:bolder 450px 思源宋体 CN;
+    white-space:nowrap;
+    transform:translate(-365px,-1390px);
+    color:#fceaac;
+    z-index:2;
 }
 
 #DR1{
-    font:bold 530px 思源宋体 CN;
-    transform:translate(470px,2400px) rotate(180deg);;
-    color: #f9ad22;
+    font:bold 450px 思源宋体 CN;
+    white-space:nowrap;
+    transform:translate(380px,3000px) rotate(180deg);;
+    color: #5461B0;
+    z-index:3;
 }
 
 #DR2{
-    font:bold 530px 思源宋体 CN;
-    transform:translate(450px,1630px) rotate(180deg);
-    color:white;
+    font:bold 450px 思源宋体 CN;
+    white-space:nowrap;
+    transform:translate(360px,2340px) rotate(180deg);
+    color:#fceaac;
+    z-index:4;
+    
 }
 
 #locm{
     position:relative;
-    margin: auto;
+     margin: auto; 
     width: 2250px;
     height: auto;
-    transform:translate(200px,-3400px);
-    z-index:2;
+    transform:translate(100px,-3010px);
 }
 
 #locs{
     position:relative;
-    margin: auto;
+     margin: auto; 
     width: 2250px;
     height: auto;
-    transform:translate(400px,-4600px);
-    z-index:1;
+    transform:translate(710px,-5130px);
 }
