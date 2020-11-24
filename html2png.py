@@ -8,20 +8,6 @@ import time
 from selenium import webdriver
 
 
-def dir_exists(path):
-    """
-    Verify if target directory path exists, create it otherwise
-    :param path: target directories path
-    :return: boolean
-    """
-    try:
-        os.makedirs(path)
-        return False
-    except FileExistsError:
-        # directory already exists
-        pass
-    return True
-
 def html2png_display(filename, png_path):
     """
     Function to convert html to png. Folium output can only be a html file.
@@ -47,12 +33,10 @@ def html2png_display(filename, png_path):
     # Give the map tiles some time to load
     # time.sleep(delay)
     # Grab the screenshot
-    # dir_exists(output_dir)
     fn = fn.split("/")[-1]
     output_name = output_dir + fn.split(".")[0]+'.png'
     elem=browser.find_element_by_id("Main")
     elem.screenshot(output_dir)
-    os.chmod(output_dir, 777)
     # Close the browser
     browser.quit()
     return output_name
