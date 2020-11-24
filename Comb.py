@@ -3,10 +3,11 @@ import re
 import os
 import csv
 from shutil import copytree, rmtree
+from PIL import Image
 # 生成器html模板所在位置
 temple = "html/Sample.html"
 # 需要生成的目录
-game=('TH6','TH7')
+game=('TH6',)
 with open(temple,encoding='utf-8') as f:
 	html=f.read()
 for num in game:
@@ -15,10 +16,12 @@ for num in game:
 	titledir=gamedir+'title.csv'#称号和名字
 	shadir='../2/'#立绘填充
 	maindir='../1/'#立绘
-	htmldir = gamedir+'/html/Sample.html'
+	htmldir = gamedir+'html/Sample.html'
 	carddir = gamedir+"card/"
 	#创建工作html文件夹
-	copytree('./html/',gamedir+'/html/')
+	if os.path.exists(gamedir+'html/'):
+		rmtree(gamedir+'html/')
+	copytree('.html/',gamedir+'html/')
 	os.mkdir(gamedir+"card/")#卡片保存目录
 	with open(titledir,encoding='utf-8') as f:
 		title=csv.reader(f)
@@ -33,9 +36,14 @@ for num in game:
 			curcard = re.sub("Sample_main.png", maindirc, curcard)
 			with open(htmldir,'w',encoding='utf-8') as f:
 				f.write(curcard)
-			html2png_display(htmldir, carddir+row[1]+'.png')
+			html2png_display(htmldir, carddir+'temp.png')
+			#设置色彩模式和dpi
+			im = Image.open(carddir+'temp.png')
+			im = im.convert(mode="CMYK")
+			im.save(carddir+row[1]+'.jpg', dpi=(300.0, 300.0))  # 保存文件
 			print(row[1],'OK')
-	rmtree(gamedir+'/html/')#删除html工作目录
+		os.remove(carddir+'temp.png')
+	rmtree(gamedir+'html/')#删除html工作目录
 
 		 
 			
