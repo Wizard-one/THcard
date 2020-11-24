@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+BODY {
+    background: #000;
+}
+
+#Main {
+    margin: auto;
+    width: 3545px;
+    height: 5905px;
+    background-image: url(Background.jpg);
+    border: 220px solid white;
+    box-sizing: border-box;
+    padding-top: 430px;
+}
+
+#Mainarea {
+    background-image: url("border.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+    width: 72%;
+    height: calc(100% - 440px);
+    position: relative;
+}
+
+#title, #name {
+    font: 109px 阿里巴巴普惠体 Light;
+    color: white;
+    width: 1em;
+    word-wrap: break-word;
+    position: absolute;
+}
+
+#title {
+    left: 70px;
+    top: 50px;
+}
+
+#name {
+    left: 210px;
+    top: 50px;
+}
+
+#top, #bottom {
+    font: bolder 450px 思源宋体 CN;
+    line-height: 1;
+    white-space: nowrap;
+    position: absolute;
+    text-shadow: -20px -20px 0 #5461B0;
+    color: #fceaac;
+    z-index: 2;
+}
+
+#top {
+    left: -338px;
+    top: -442px;
+}
+
+#bottom {
+    transform: rotate(180deg);
+    right: -338px;
+    bottom: -440px;
+}
+
+img {
+    width: 2250px;
+    /* height: auto; */
+    height: 4830px;
+    position: absolute;
+}
+
+#pic {
+    z-index: 20;
+    left: 187px;
+    top: -121px;
+}
+
+#shadow {
+    z-index: 10;
+    left: 136px;
+    top: -194px;
+}
