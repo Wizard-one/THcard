@@ -21,7 +21,7 @@ for num in game:
 	#创建工作html文件夹
 	if os.path.exists(gamedir+'html/'):
 		rmtree(gamedir+'html/')
-	copytree('.html/',gamedir+'html/')
+	copytree('./html/',gamedir+'html/')
 	os.mkdir(gamedir+"card/")#卡片保存目录
 	with open(titledir,encoding='utf-8') as f:
 		title=csv.reader(f)
