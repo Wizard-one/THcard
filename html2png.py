@@ -27,7 +27,9 @@ def html2png_display(filename, png_path):
     print(path)
 
     # Open a browser window...
-    browser = webdriver.Firefox(executable_path=path)
+    option = webdriver.FirefoxOptions()
+    option.set_headless()# 设置option 
+    browser = webdriver.Firefox(executable_path=path,firefox_options=option)
     # ..that displays the map...
     browser.get(tmpurl)
     # Give the map tiles some time to load
