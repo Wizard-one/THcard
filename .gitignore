@@ -1,2 +1,6 @@
 img/
 .vscode/
+geckodriver*
+__pycache__
+card/
+modify.csv
