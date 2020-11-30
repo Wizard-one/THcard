@@ -27,21 +27,23 @@ BODY {
 }
 
 #title, #name {
-    font: 109px 阿里巴巴普惠体 Light;
+    font: 241px '方正隶变简体';
     color: white;
     width: 1em;
     word-wrap: break-word;
     position: absolute;
+    font-family: '方正隶变简体',LiSu;
 }
 
 #title {
-    left: 70px;
+    left: calc(78px - 400px);
     top: 50px;
 }
 
 #name {
-    left: 210px;
-    top: 50px;
+    transform: rotate(180deg);
+    right: calc(78px - 400px);
+    bottom: 50px;
 }
 
 #top, #bottom {
@@ -82,4 +84,30 @@ img {
     z-index: 10;
     left: -42px;
     top: 24px;
+}
+
+img#pic, img#shadow {
+    display: block;
+    margin: 0 auto;
+    position: static;
+}
+
+img#shadow {
+    padding: 20px 84px 0 0;
+}
+
+/*
+div#imgVerticalWrapper {
+    position: absolute;
+    top: 0;
+    margin-top: calc(220px + 430px);
+}
+*/
+
+div.imgWrapper {
+    position: absolute;
+    top: 0;
+    width: 3105px;
+    height: 5000px;
+    margin-top: calc(220px + 430px + 400px);
 }
