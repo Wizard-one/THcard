@@ -9,8 +9,8 @@ BODY {
 
 #Main {
     margin: auto;
-    width: 3545px;
-    height: 5905px;
+    width: 3538px;
+    height: 5185px;
     background-image: url(Background.jpg);
     border: 220px solid white;
     box-sizing: border-box;
@@ -68,7 +68,7 @@ BODY {
 }
 img {
     width: auto;
-    height: 4060px;
+    height: 3600px;
 }
 
 img#pic, img#shadow {
@@ -78,7 +78,7 @@ img#pic, img#shadow {
 }
 
 img#shadow {
-    padding: 20px 84px 0 0;
+    padding: 0px 115px 0 0;
 }
 
 
@@ -87,5 +87,5 @@ div.imgWrapper {
     top: 0;
     width: 3105px;
     height: 5000px;
-    margin-top: calc(220px + 430px + 400px);
+    margin-top: calc(220px + 430px + 240px);
 }
