@@ -7,7 +7,6 @@ from PIL import Image
 """ 
 TouHou 卡牌生成器，利用HTML模板截图生成
 """
-game = ('TH',)
 
 def ChangeDpi(path, out_path):
 	"""
