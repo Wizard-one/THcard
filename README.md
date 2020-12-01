@@ -7,9 +7,9 @@ Marco Iannella 写的HTML 转换为png的脚本，修改后变成截取固定HTM
 从THwiki上爬取角色称号
 ## [html2card.py](./html2card.py)
 直接从`.img/THX/html`文件夹中生成卡牌，用于手动调整后批量生成
-## [ClearTemp.py](ClearTemp.py)
+## [ClearTemp.py](./ClearTemp.py)
 清除临时生成的HTML文件夹
-## [html2png_test.py]
+## [html2png_test.py](./html2png_test.py)
 html转换测试文件
 ## [img](./img)
 目录结构如下：
